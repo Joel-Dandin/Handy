@@ -13,7 +13,7 @@
     "otherLanguages": "Diğer Diller"
   },
   "sidebar": {
-    "general": "Genel",
+    "transcribeFile": "Transcribe File",    "general": "Genel",
     "models": "Modeller",
     "advanced": "Gelişmiş",
     "postProcessing": "Son İşlem",
@@ -690,8 +690,23 @@
         "createFirst": "İlk son işlem promptunuzu oluşturmak için yukarıdaki “Yeni Prompt Oluştur” seçeneğine tıklayın."
       }
     },
+    "fileTranscription": {
+      "title": "Transcribe Audio File",
+      "description": "Choose a WAV recording to transcribe with your selected model. The audio never leaves your computer.",
+      "formatHint": "Supported format: 16 kHz, mono, 16-bit PCM WAV, up to 100 MB.",
+      "chooseFile": "Choose WAV file",
+      "noFile": "No file selected",
+      "transcribe": "Transcribe",
+      "transcribing": "Transcribing...",
+      "resultTitle": "Transcript",
+      "empty": "No speech was detected in this file.",
+      "copy": "Copy transcript",
+      "copied": "Copied",
+      "copyError": "Failed to copy transcript to clipboard.",
+      "error": "Transcription failed: {{error}}"
+    },
     "history": {
-      "title": "Geçmiş",
+      "title":"Geçmiş",
       "openFolder": "Kayıtlar Klasörünü Aç",
       "loading": "Geçmiş yükleniyor...",
       "empty": "Henüz transkripsiyon yok. Geçmişinizi oluşturmak için kayda başlayın!",

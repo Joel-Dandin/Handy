@@ -84,7 +84,7 @@ static RECORDING_SESSION: AtomicU64 = AtomicU64::new(0);
 
 /// Drop guard that finishes the transcription pipeline, including immediate
 /// model unloading on early exits.
-struct FinishGuard(AppHandle, Arc<TranscriptionManager>);
+pub(crate) struct FinishGuard(pub(crate) AppHandle, pub(crate) Arc<TranscriptionManager>);
 impl Drop for FinishGuard {
     fn drop(&mut self) {
         self.1.maybe_unload_immediately("transcription session");

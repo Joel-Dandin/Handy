@@ -13,6 +13,7 @@
     "otherLanguages": "Други езици"
   },
   "sidebar": {
+    "transcribeFile": "Transcribe File",    
     "general": "Общи",
     "models": "Модели",
     "advanced": "Разширени",
@@ -689,6 +690,21 @@
         "selectToEdit": "Изберете подкана по-горе, за да видите и редактирате подробностите ѝ.",
         "createFirst": "Натиснете „Нова подкана“ по-горе, за да създадете първата си подкана за постобработка."
       }
+    },
+    "fileTranscription": {
+      "title": "Transcribe Audio File",
+      "description": "Choose a WAV recording to transcribe with your selected model. The audio never leaves your computer.",
+      "formatHint": "Supported format: 16 kHz, mono, 16-bit PCM WAV, up to 100 MB.",
+      "chooseFile": "Choose WAV file",
+      "noFile": "No file selected",
+      "transcribe": "Transcribe",
+      "transcribing": "Transcribing...",
+      "resultTitle": "Transcript",
+      "empty": "No speech was detected in this file.",
+      "copy": "Copy transcript",
+      "copied": "Copied",
+      "copyError": "Failed to copy transcript to clipboard.",
+      "error": "Transcription failed: {{error}}"
     },
     "history": {
       "title": "История",

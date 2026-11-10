@@ -13,7 +13,7 @@
     "otherLanguages": "기타 언어"
   },
   "sidebar": {
-    "general": "일반",
+    "transcribeFile": "Transcribe File",    "general": "일반",
     "models": "모델",
     "advanced": "고급",
     "postProcessing": "후처리",
@@ -690,8 +690,23 @@
         "createFirst": "첫 번째 후처리 프롬프트를 만들려면 위의 '새 프롬프트 만들기'를 클릭하세요."
       }
     },
+    "fileTranscription": {
+      "title": "Transcribe Audio File",
+      "description": "Choose a WAV recording to transcribe with your selected model. The audio never leaves your computer.",
+      "formatHint": "Supported format: 16 kHz, mono, 16-bit PCM WAV, up to 100 MB.",
+      "chooseFile": "Choose WAV file",
+      "noFile": "No file selected",
+      "transcribe": "Transcribe",
+      "transcribing": "Transcribing...",
+      "resultTitle": "Transcript",
+      "empty": "No speech was detected in this file.",
+      "copy": "Copy transcript",
+      "copied": "Copied",
+      "copyError": "Failed to copy transcript to clipboard.",
+      "error": "Transcription failed: {{error}}"
+    },
     "history": {
-      "title": "히스토리",
+      "title":"히스토리",
       "openFolder": "녹음 폴더 열기",
       "loading": "히스토리 로딩 중...",
       "empty": "아직 변환된 내용이 없습니다. 녹음을 시작하여 히스토리를 만드세요!",

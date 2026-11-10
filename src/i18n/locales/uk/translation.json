@@ -13,7 +13,7 @@
     "otherLanguages": "Інші мови"
   },
   "sidebar": {
-    "general": "Загальні",
+    "transcribeFile": "Transcribe File",    "general": "Загальні",
     "models": "Моделі",
     "advanced": "Розширені",
     "postProcessing": "Постобробка",
@@ -690,8 +690,23 @@
         "createFirst": "Натисніть «Створити новий промпт» вище, щоб створити ваш перший промпт постобробки."
       }
     },
+    "fileTranscription": {
+      "title": "Transcribe Audio File",
+      "description": "Choose a WAV recording to transcribe with your selected model. The audio never leaves your computer.",
+      "formatHint": "Supported format: 16 kHz, mono, 16-bit PCM WAV, up to 100 MB.",
+      "chooseFile": "Choose WAV file",
+      "noFile": "No file selected",
+      "transcribe": "Transcribe",
+      "transcribing": "Transcribing...",
+      "resultTitle": "Transcript",
+      "empty": "No speech was detected in this file.",
+      "copy": "Copy transcript",
+      "copied": "Copied",
+      "copyError": "Failed to copy transcript to clipboard.",
+      "error": "Transcription failed: {{error}}"
+    },
     "history": {
-      "title": "Історія",
+      "title":"Історія",
       "openFolder": "Відкрити папку записів",
       "loading": "Завантаження історії...",
       "empty": "Транскрипцій поки немає. Почніть запис, щоб створити історію!",

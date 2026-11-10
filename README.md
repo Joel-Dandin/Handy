@@ -30,6 +30,14 @@ The process is entirely local:
   - **Parakeet V3** - CPU-optimized model with excellent performance and automatic language detection
 - Works on Windows, macOS, and Linux
 
+### Transcribing a WAV file
+
+Open **Transcribe File** in the sidebar, choose a WAV file, and press **Transcribe**. The transcript appears in the panel and can be copied. It uses the same model and settings as dictation, but is not pasted or saved to history.
+
+- Supported format: 16 kHz, mono, 16-bit PCM WAV, up to 100 MB. Convert other audio first, e.g. `ffmpeg -i input.mp3 -ar 16000 -ac 1 -c:a pcm_s16le output.wav`.
+- A model must already be downloaded and selected.
+- It cannot run while a dictation is recording or processing.
+
 ## Quick Start
 
 ### Installation

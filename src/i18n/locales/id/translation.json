@@ -13,7 +13,7 @@
     "otherLanguages": "Bahasa Lain"
   },
   "sidebar": {
-    "general": "Umum",
+    "transcribeFile": "Transcribe File",    "general": "Umum",
     "models": "Model",
     "advanced": "Lanjutan",
     "postProcessing": "Pascaproses",
@@ -690,8 +690,23 @@
         "createFirst": "Klik 'Buat Prompt Baru' di atas untuk membuat prompt pascaproses pertama Anda."
       }
     },
+    "fileTranscription": {
+      "title": "Transcribe Audio File",
+      "description": "Choose a WAV recording to transcribe with your selected model. The audio never leaves your computer.",
+      "formatHint": "Supported format: 16 kHz, mono, 16-bit PCM WAV, up to 100 MB.",
+      "chooseFile": "Choose WAV file",
+      "noFile": "No file selected",
+      "transcribe": "Transcribe",
+      "transcribing": "Transcribing...",
+      "resultTitle": "Transcript",
+      "empty": "No speech was detected in this file.",
+      "copy": "Copy transcript",
+      "copied": "Copied",
+      "copyError": "Failed to copy transcript to clipboard.",
+      "error": "Transcription failed: {{error}}"
+    },
     "history": {
-      "title": "Riwayat",
+      "title":"Riwayat",
       "openFolder": "Buka Folder Rekaman",
       "loading": "Memuat riwayat...",
       "empty": "Belum ada transkripsi. Mulai merekam untuk mengisi riwayat Anda!",

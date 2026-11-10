@@ -13,7 +13,7 @@
     "otherLanguages": "Ngôn ngữ khác"
   },
   "sidebar": {
-    "general": "Chung",
+    "transcribeFile": "Transcribe File",    "general": "Chung",
     "models": "Mô hình",
     "advanced": "Nâng cao",
     "postProcessing": "Xử lý sau",
@@ -690,8 +690,23 @@
         "createFirst": "Nhấn 'Tạo Prompt mới' ở trên để tạo prompt xử lý sau đầu tiên của bạn."
       }
     },
+    "fileTranscription": {
+      "title": "Transcribe Audio File",
+      "description": "Choose a WAV recording to transcribe with your selected model. The audio never leaves your computer.",
+      "formatHint": "Supported format: 16 kHz, mono, 16-bit PCM WAV, up to 100 MB.",
+      "chooseFile": "Choose WAV file",
+      "noFile": "No file selected",
+      "transcribe": "Transcribe",
+      "transcribing": "Transcribing...",
+      "resultTitle": "Transcript",
+      "empty": "No speech was detected in this file.",
+      "copy": "Copy transcript",
+      "copied": "Copied",
+      "copyError": "Failed to copy transcript to clipboard.",
+      "error": "Transcription failed: {{error}}"
+    },
     "history": {
-      "title": "Lịch sử",
+      "title":"Lịch sử",
       "openFolder": "Mở thư mục ghi âm",
       "loading": "Đang tải lịch sử...",
       "empty": "Chưa có bản ghi nào. Bắt đầu ghi âm để xây dựng lịch sử của bạn!",

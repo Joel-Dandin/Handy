@@ -13,7 +13,7 @@
     "otherLanguages": "अन्य भाषाहरू"
   },
   "sidebar": {
-    "general": "सामान्य",
+    "transcribeFile": "Transcribe File",    "general": "सामान्य",
     "models": "मोडेलहरू",
     "advanced": "उन्नत",
     "postProcessing": "पोस्ट प्रोसेस",
@@ -690,8 +690,23 @@
         "createFirst": "आफ्नो पहिलो पोस्ट-प्रोसेसिङ प्रम्प्ट बनाउन माथिको 'नयाँ प्रम्प्ट बनाउनुहोस्' क्लिक गर्नुहोस्।"
       }
     },
+    "fileTranscription": {
+      "title": "Transcribe Audio File",
+      "description": "Choose a WAV recording to transcribe with your selected model. The audio never leaves your computer.",
+      "formatHint": "Supported format: 16 kHz, mono, 16-bit PCM WAV, up to 100 MB.",
+      "chooseFile": "Choose WAV file",
+      "noFile": "No file selected",
+      "transcribe": "Transcribe",
+      "transcribing": "Transcribing...",
+      "resultTitle": "Transcript",
+      "empty": "No speech was detected in this file.",
+      "copy": "Copy transcript",
+      "copied": "Copied",
+      "copyError": "Failed to copy transcript to clipboard.",
+      "error": "Transcription failed: {{error}}"
+    },
     "history": {
-      "title": "हिस्ट्री",
+      "title":"हिस्ट्री",
       "openFolder": "रेकर्डिङ फोल्डर खोल्नुहोस्",
       "loading": "हिस्ट्री लोड गरिँदैछ...",
       "empty": "अहिलेसम्म कुनै ट्रान्सक्रिप्सन छैन। हिस्ट्री बनाउन रेकर्डिङ सुरु गर्नुहोस्!",

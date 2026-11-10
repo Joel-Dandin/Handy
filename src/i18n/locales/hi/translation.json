@@ -13,7 +13,7 @@
     "otherLanguages": "अन्य भाषाएँ"
   },
   "sidebar": {
-    "general": "सामान्य",
+    "transcribeFile": "Transcribe File",    "general": "सामान्य",
     "models": "मॉडल",
     "advanced": "ऐडवांस",
     "postProcessing": "पोस्ट प्रोसेस",
@@ -689,6 +689,21 @@
         "selectToEdit": "जानकारी देखने और बदलाव करने के लिए, ऊपर कोई प्रॉम्प्ट चुनें.",
         "createFirst": "अपना पहला पोस्ट-प्रोसेसिंग प्रॉम्प्ट बनाने के लिए, ऊपर 'नया प्रॉम्प्ट बनाएं' पर क्लिक करें."
       }
+    },
+    "fileTranscription": {
+      "title": "Transcribe Audio File",
+      "description": "Choose a WAV recording to transcribe with your selected model. The audio never leaves your computer.",
+      "formatHint": "Supported format: 16 kHz, mono, 16-bit PCM WAV, up to 100 MB.",
+      "chooseFile": "Choose WAV file",
+      "noFile": "No file selected",
+      "transcribe": "Transcribe",
+      "transcribing": "Transcribing...",
+      "resultTitle": "Transcript",
+      "empty": "No speech was detected in this file.",
+      "copy": "Copy transcript",
+      "copied": "Copied",
+      "copyError": "Failed to copy transcript to clipboard.",
+      "error": "Transcription failed: {{error}}"
     },
     "history": {
       "title": "इतिहास",

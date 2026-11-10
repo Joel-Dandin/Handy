@@ -13,7 +13,7 @@
     "otherLanguages": "Otros idiomas"
   },
   "sidebar": {
-    "general": "General",
+    "transcribeFile": "Transcribe File",    "general": "General",
     "models": "Modelos",
     "advanced": "Avanzado",
     "postProcessing": "Post proceso",
@@ -689,6 +689,21 @@
         "selectToEdit": "Selecciona un prompt arriba para ver y editar sus detalles.",
         "createFirst": "Haz clic en 'Crear nuevo prompt' arriba para crear tu primer prompt de post procesamiento."
       }
+    },
+    "fileTranscription": {
+      "title": "Transcribe Audio File",
+      "description": "Choose a WAV recording to transcribe with your selected model. The audio never leaves your computer.",
+      "formatHint": "Supported format: 16 kHz, mono, 16-bit PCM WAV, up to 100 MB.",
+      "chooseFile": "Choose WAV file",
+      "noFile": "No file selected",
+      "transcribe": "Transcribe",
+      "transcribing": "Transcribing...",
+      "resultTitle": "Transcript",
+      "empty": "No speech was detected in this file.",
+      "copy": "Copy transcript",
+      "copied": "Copied",
+      "copyError": "Failed to copy transcript to clipboard.",
+      "error": "Transcription failed: {{error}}"
     },
     "history": {
       "title": "Historial",

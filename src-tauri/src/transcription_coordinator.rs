@@ -200,6 +200,7 @@ enum Effect {
 enum Command {
     Input(InputEvent),
     Cancel { recording_was_active: bool },
+    BeginFileProcessing(Sender<bool>),
     ProcessingFinished,
 }
 
@@ -506,6 +507,16 @@ impl CoordinatorState {
         }
     }
 
+    /// Reserve an idle pipeline for a file transcription. The reservation
+    /// is released by `on_processing_finished`.
+    fn try_begin_file_processing(&mut self) -> bool {
+        if self.stage != Stage::Idle {
+            return false;
+        }
+        self.stage = Stage::Processing;
+        true
+    }
+
     fn on_processing_finished(&mut self) -> Option<Effect> {
         self.stage = Stage::Idle;
         self.hold = None;
@@ -621,6 +632,9 @@ impl TranscriptionCoordinator {
                                 emit_recording_phase(&app, RecordingPhase::Cancelled);
                             }
                         }
+                        Command::BeginFileProcessing(reply) => {
+                            let _ = reply.send(state.try_begin_file_processing());
+                        }
                         Command::ProcessingFinished => {
                             if let Some(effect) = state.on_processing_finished() {
                                 run_effect(&app, &mut state, effect);
@@ -709,6 +723,17 @@ impl TranscriptionCoordinator {
         {
             warn!("Transcription coordinator channel closed");
         }
+    }
+
+    /// Reserve an idle pipeline for file transcription. Blocks until the
+    /// coordinator thread answers, so call it from a blocking worker.
+    pub fn try_begin_file_processing(&self) -> bool {
+        let (reply, answer) = mpsc::channel();
+        if self.tx.send(Command::BeginFileProcessing(reply)).is_err() {
+            warn!("Transcription coordinator channel closed");
+            return false;
+        }
+        answer.recv().unwrap_or(false)
     }
 
     pub fn notify_processing_finished(&self) {

@@ -13,7 +13,7 @@
     "otherLanguages": "Andere talen"
   },
   "sidebar": {
-    "general": "Algemeen",
+    "transcribeFile": "Transcribe File",    "general": "Algemeen",
     "models": "Modellen",
     "advanced": "Geavanceerd",
     "postProcessing": "Naverwerking",
@@ -690,8 +690,23 @@
         "createFirst": "Klik hierboven op 'Nieuwe prompt maken' om je eerste naverwerkingsprompt aan te maken."
       }
     },
+    "fileTranscription": {
+      "title": "Transcribe Audio File",
+      "description": "Choose a WAV recording to transcribe with your selected model. The audio never leaves your computer.",
+      "formatHint": "Supported format: 16 kHz, mono, 16-bit PCM WAV, up to 100 MB.",
+      "chooseFile": "Choose WAV file",
+      "noFile": "No file selected",
+      "transcribe": "Transcribe",
+      "transcribing": "Transcribing...",
+      "resultTitle": "Transcript",
+      "empty": "No speech was detected in this file.",
+      "copy": "Copy transcript",
+      "copied": "Copied",
+      "copyError": "Failed to copy transcript to clipboard.",
+      "error": "Transcription failed: {{error}}"
+    },
     "history": {
-      "title": "Geschiedenis",
+      "title":"Geschiedenis",
       "openFolder": "Opnamemap openen",
       "loading": "Geschiedenis laden...",
       "empty": "Nog geen transcripties. Start met opnemen om je geschiedenis op te bouwen!",
